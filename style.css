@@ -1,0 +1,162 @@
+body {
+  font-family: 'Josefin Sans', sans-serif !important;
+  margin: 5rem 0 5rem 0;
+  background: #3C2053;
+  font-family: tahoma;
+}
+
+body .music_player {
+  position: relative;
+  margin: 0 auto;
+  background: #402457;
+  height: 15rem;
+  width: 340px;
+  -webkit-box-shadow: 10px 0px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 20px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 0px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+body .music_player .time_slider {
+  background: #301643;
+  height: 2.5rem;
+  width: 18.7rem;
+  position: absolute;
+  bottom: 0;
+}
+
+body .music_player .time_slider span {
+  position: absolute;
+  font-size: 12px;
+  top: 0.75rem;
+}
+
+body .music_player .time_slider .runing_time {
+  color: #FECF7D;
+}
+
+body .music_player .controllers {
+  background: #260F39;
+  height: 2.5rem;
+  width: 21.4rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: FontAwesome;
+  text-align: center;
+  color: #83649F;
+}
+
+body .music_player .controllers i {
+  position: relative;
+  bottom: -0.7rem;
+  padding: 0 15px 0 15px;
+}
+
+body .music_player .now_playing {
+  top: 0;
+  right: 0;
+  height: 2.5rem;
+  width: 21.4rem;
+  position: absolute;
+  background: #260F39;
+  text-align: center;
+  color: #9073A9;
+}
+
+body .music_player .now_playing i.fa-heart {
+  top: 0.5rem;
+  right: 4rem;
+  position: absolute;
+}
+
+body .music_player .now_playing i.fa-refresh {
+  top: 0.5rem;
+  left: 4rem;
+  position: absolute;
+}
+
+body .music_player .now_playing p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+body .music_info {
+  top: 2rem;
+  right: 0;
+  position: absolute;
+  width: 21rem;
+}
+
+body .music_info h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+body .music_info p {
+  text-align: center;
+}
+
+body .music_info .date {
+  color: #A384BD;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: -0.8em;
+}
+
+body .music_info .song_title {
+  color: #E7DF70;
+}
+
+/****** Style Star Rating Widget *****/
+
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  color: #FEC35E;
+}
+
+.song_list {
+  background: #402457;
+  margin: 0 auto;
+  width: 342px;
+  font-size: 18px;
+  color: #fff;
+  overflow-y: scroll;
+  -webkit-box-shadow: 10px 7px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 20px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 20px -6px rgba(0, 0, 0, 0.75);
+}
+.dark{
+    background:#260F39;
+  }
+
+.song_list .title {
+  text-align: center;
+  padding: 2px 0 2px 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #260F39;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #402457;
+}
+
+.invisible {
+  display: none;
+}

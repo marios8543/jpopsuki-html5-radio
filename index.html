@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JPOPSuki Radio!</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <div class="music_player">
+    <audio id="mainPlayer"></audio>
+    <div class="now_playing">
+      <i class="fa fa-refresh" aria-hidden="true"></i>
+      <p>Now Playing</p>
+      <i class="fa fa-heart" aria-hidden="true"></i>
+    </div>
+    <div class="music_info">
+      <h2 id="npTitle"></h2>
+      <p id="npArtist" class="date"></p>
+      <p id="npAlbum" class="song_title"></p>
+      <center>
+      <span id="btnPlay">
+        <svg id="play-icon" version="1.1" height="40" width="40" viewBox="0 0 1200 1200" style="fill: white">
+          <path d="M 600,1200 C 268.65,1200 0,931.35 0,600 0,268.65 268.65,0 600,0 c 331.35,0 600,268.65 600,600 0,331.35 -268.65,600 -600,600 z M 450,300.45 450,899.55 900,600 450,300.45 z" id="path16995" />
+        </svg>
+        <svg class="invisible" id="pause-icon" version="1.1" height="40" width="40" viewBox="0 0 1200 1200" style="fill: white">
+          <path id="path15778" d="M 600,0 C 268.62914,0 0,268.62914 0,600 c 0,331.37086 268.62914,600 600,600 331.37086,0 600,-268.62914 600,-600 C 1200,268.62914 931.37086,0 600,0 z m -269.16515,289.38 181.71397,0 0,621.24 -181.71397,0 0,-621.24 z m 356.61633,0 181.71399,0 0,621.24 -181.71399,0 0,-621.24 z" />
+        </svg>
+      </span>
+      </center>
+    </div>
+    <div class="time_slider controllers">
+      <span class="runing_time" style="text-align: center;">Time elapsed 0:00</span>
+    </div>
+  </div> 
+  <div id="songListDom" class="song_list">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
